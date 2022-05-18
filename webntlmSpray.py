@@ -133,7 +133,7 @@ def main():
         output.error('Cannot read the file, check permissions!')
         os._exit(0) #we want to exit the whole process
 
-    output.info('Starting spraying against ' + args.target + ' for ' + str(len(users)) + ' using format ' + args.domain + '\Username!\n Please be wait....')
+    output.info('Starting spraying against ' + args.target + ' for ' + str(len(users)) + ' using format ' + args.domain + '\\Username!\n Please be wait....')
 
     #add some argument parsing and validation here later
     with concurrent.futures.ThreadPoolExecutor(8) as executor:
